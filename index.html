@@ -1,0 +1,107 @@
+<!--
+Create a professional-level Student Task Manager web application.
+
+Design Requirements:
+- Use a modern, neutral color palette (soft greys, muted greens, elegant whites)
+- Use proper spacing, padding and margins for clean layout
+- Use Google Font like Inter or Poppins for elegant typography
+- Use soft shadows and rounded corners
+- Make it visually minimal and professional (SaaS-style dashboard look)
+- Add a fixed top time bar that shows live date and time
+- Add smooth hover effects and subtle animations
+- Make it fully responsive
+
+Technical Requirements:
+- Use separate files: index.html, style.css, script.js
+- Do NOT use inline JavaScript
+- Use addEventListener
+- Store tasks in localStorage
+- Each task should be an object with id, text, completed
+- Add task statistics (Total, Completed, Pending)
+- Use clean, modular and readable code
+- Follow good software development practices
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Task Manager</title>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: rgba(0,0,0,0.7);
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: rgba(255,255,255,0.8);
+            padding: 10px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }   
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Student Task Manager</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Tasks</a>
+        <a href="#">Statistics</a>
+        <a href="#">Settings</a>
+    </nav>
+    <div class="container">
+        <h2>Welcome to your Task Manager!</h2>
+        <p>Use this application to manage your tasks effectively.</p>
+        <button id="addTaskBtn">Add New Task</button>
+    </div>
+
+    <script>
+        document.getElementById('addTaskBtn').addEventListener('click', function() {
+            alert('Add Task button clicked!');
+        });
+        
+    </script>>
+       
+
+    </script>
+</body>
+</html>
